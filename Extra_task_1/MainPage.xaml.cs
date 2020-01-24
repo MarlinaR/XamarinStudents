@@ -26,16 +26,6 @@ namespace Extra_task_1
 
             }
             listView.ItemsSource = Colors;
-            //Label header = new Label
-            //{
-            //    Text = "Список моделей",
-            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //    HorizontalOptions = LayoutOptions.Center
-            //};
-            //ListView listView = new ListView();
-            //// определяем источник данных
-            //listView.ItemsSource = Colors;
-            //this.Content = new StackLayout { Children = { header, listView } };
 
         }
     }
