@@ -6,12 +6,18 @@
              mc:Ignorable="d"
              xmlns:local1="clr-namespace:Extra_task_1"
              x:Class="Extra_task_1.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Slider">
+                <Setter Property="Maximum" Value="255" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout  >
         <local1:GradientColorStack x:Name="Grad" 
                                    StartColor= "#3e5151">
         </local1:GradientColorStack>
-        <Slider x:Name="sl"
-               />
+        <Slider x:Name="sl" />
     </StackLayout>
 
 </ContentPage>

@@ -20,7 +20,7 @@ namespace Extra_task_1
             InitializeComponent();
             sl.ValueChanged += (sender, args) =>
             {
-                Color cl = Color.FromRgba((int)sl.Value, 0, 0, 255);
+                Color cl = Color.FromRgb((int)sl.Value, 0, 0);
                 Grad.StartColor = cl;
               
             };
