@@ -15,15 +15,28 @@ namespace Extra_task_1
 
     public partial class MainPage : ContentPage
     {
+
+        void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
+        {
+            if (sender == rs)
+            {
+                rl.Text = String.Format("Red = {0}", (int)args.NewValue);
+            }
+            else if (sender == gs)
+            {
+                gl.Text = String.Format("Green = {0}", (int)args.NewValue);
+            }
+            else if (sender == bs)
+            {
+                bl.Text = String.Format("Blue = {0}", (int)args.NewValue);
+            }
+
+            boxView.Color = Color.FromRgb((int)rs.Value, (int)gs.Value, (int)bs.Value);
+            Graad.StartColor = Color.FromRgb((int)rs.Value, (int)gs.Value, (int)bs.Value);
+        }
         public MainPage()
         {
             InitializeComponent();
-            sl.ValueChanged += (sender, args) =>
-            {
-                Color cl = Color.FromRgb((int)sl.Value, 0, 0);
-                Grad.StartColor = cl;
-              
-            };
 
         }
 

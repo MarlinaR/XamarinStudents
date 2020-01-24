@@ -14,10 +14,28 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout  >
-        <local1:GradientColorStack x:Name="Grad" 
+        <local1:GradientColorStack x:Name="Graad" 
                                    StartColor= "#3e5151">
         </local1:GradientColorStack>
-        <Slider x:Name="sl" />
+        <BoxView x:Name="boxView"
+                 Color="White"
+                 VerticalOptions="FillAndExpand" />
+
+
+        <Slider x:Name="rs"
+                ValueChanged="OnSliderValueChanged" />
+
+        <Label x:Name="rl" />
+
+        <Slider x:Name="gs"
+                ValueChanged="OnSliderValueChanged" />
+
+        <Label x:Name="gl" />
+
+        <Slider x:Name="bs"
+                ValueChanged="OnSliderValueChanged" />
+
+        <Label x:Name="bl" />
     </StackLayout>
 
 </ContentPage>
